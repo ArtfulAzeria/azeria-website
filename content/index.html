@@ -15,7 +15,7 @@
 <body id="body">
     <div class="body-wrapper">
 
-        <!--<div class="lang-box" onclick="langdrop()"></div>-->
+        <div class="lang-box" onclick="langdrop()"></div>
 
 
         <div class="left-col col">
@@ -23,7 +23,7 @@
 
             <h1 class="name">Azeria</h1>
             <div class="line"></div>
-            <h2>Más de mí en redes</h2>
+            <h2 id="socials-title"></h2>
 
             <div class="contact-box">
                 <a href="mailto:azeria.dev@proton.me">
@@ -87,74 +87,13 @@
                 </a>
             </div>
 
-            <h2>Mis idiomas</h2>
-            <p class="lang">Español - Nativo</p>
-            <p class="lang">Inglés - Avanzado</p>
+            <h2 id="mylangs-title"></h2>
+            <p id="mylangs_1" class="lang"></p>
+            <p id="mylangs_2" class="lang"></p>
         </div>
 
         <div class="middle-col col">
-            <h2>Mis contribuciones de código abierto</h2>
-
-            <div class="code-contrib-wrap">
-                <div class="code-contrib">
-                    <a href="https://github.com/electricitymaps/electricitymaps-contrib">
-                        <div>
-                            <img src="../resources/ElectricityMaps.png" alt="Electricity Maps Logo">
-                            <h3 class="contrib-title">Electricity Maps</h3>
-                        </div>
-                        <p>
-                            Traducción y corrección de textos.
-                        </p>
-                        <div class="tool-display">
-                            <div class="tool">
-                                <p>Visual Studio Code</p>
-                            </div>
-                            <div class="tool">
-                                <p>Git</p>
-                            </div>
-                            <div class="tool">
-                                <p>GitHub</p>
-                            </div>
-                            <div class="tool">
-                                <p>JSON</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="code-contrib">
-                    <a href="https://github.com/jackyzha0/quartz">
-                        <div>
-                            <img src="../resources/Quartz.png" alt="Quartz Logo">
-                            <h3 class="contrib-title">Quartz</h3>
-                        </div>
-                        <p>
-                            Corrección de bugs en la visualización.
-                        </p>
-                        <div class="tool-display">
-                            <div class="tool">
-                                <p>Visual Studio Code</p>
-                            </div>
-                            <div class="tool">
-                                <p>Git</p>
-                            </div>
-                            <div class="tool">
-                                <p>GitHub</p>
-                            </div>
-                            <div class="tool">
-                                <p>TypeScript</p>
-                            </div>
-                            <div class="tool">
-                                <p>HTML</p>
-                            </div>
-                            <div class="tool">
-                                <p>CSS</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <h2>Mis proyectos de código abierto</h2>
+            <h2 id="open-source-personal"></h2>
             <div class="code-contrib-wrap">
                 <div class="code-contrib">
                     <a href="https://github.com/ArtfulAzeria/aemet-avisa">
@@ -162,9 +101,7 @@
                             <img src="../resources/AemetAvisa.jpg" alt="Avatar para el bot Aemet Avisa">
                             <h3 class="contrib-title">Aemet Avisa</h3>
                         </div>
-                        <p>
-                            Bot para BlueSky que publica alertas las meteorológicas de AEMET.
-                        </p>
+                        <p id="osp-1"></p>
                         <div class="tool-display">
                             <div class="tool">
                                 <p>Visual Studio Code</p>
@@ -208,9 +145,7 @@
                             <img src="../resources/YearLeft.jpg" alt="Avatar para el bot Year Left">
                             <h3 class="contrib-title">Year Left</h3>
                         </div>
-                        <p>
-                            Bot para BlueSky que publica una cuenta atrás para año nuevo.
-                        </p>
+                        <p id="osp-2"></p>
                         <div class="tool-display">
                             <div class="tool">
                                 <p>Visual Studio Code</p>
@@ -232,6 +167,62 @@
                             </div>
                             <div class="tool">
                                 <p>Bash</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <h2 id="open-source-contrib"></h2>
+
+            <div class="code-contrib-wrap">
+                <div class="code-contrib">
+                    <a href="https://github.com/electricitymaps/electricitymaps-contrib">
+                        <div>
+                            <img src="../resources/ElectricityMaps.png" alt="Electricity Maps Logo">
+                            <h3 class="contrib-title">Electricity Maps</h3>
+                        </div>
+                        <p id="osc-1"></p>
+                        <div class="tool-display">
+                            <div class="tool">
+                                <p>Visual Studio Code</p>
+                            </div>
+                            <div class="tool">
+                                <p>Git</p>
+                            </div>
+                            <div class="tool">
+                                <p>GitHub</p>
+                            </div>
+                            <div class="tool">
+                                <p>JSON</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="code-contrib">
+                    <a href="https://github.com/jackyzha0/quartz">
+                        <div>
+                            <img src="../resources/Quartz.png" alt="Quartz Logo">
+                            <h3 class="contrib-title">Quartz</h3>
+                        </div>
+                        <p id="osc-2"></p>
+                        <div class="tool-display">
+                            <div class="tool">
+                                <p>Visual Studio Code</p>
+                            </div>
+                            <div class="tool">
+                                <p>Git</p>
+                            </div>
+                            <div class="tool">
+                                <p>GitHub</p>
+                            </div>
+                            <div class="tool">
+                                <p>TypeScript</p>
+                            </div>
+                            <div class="tool">
+                                <p>HTML</p>
+                            </div>
+                            <div class="tool">
+                                <p>CSS</p>
                             </div>
                         </div>
                     </a>
@@ -315,7 +306,10 @@
     </div>
 
 
-
+    <!-- Locales -->
+    <script src="../conf/locale/en-GB/en-GB_locale.js"></script>
+    <script src="../conf/locale/es-ES/es-ES_locale.js"></script>
+    <!-- Other stuff -->
     <script src="../logic/index-logic.js"></script>
     <script src="../logic/three.r134.min.js"></script>
     <script src="../logic/vanta.fog.min.js"></script>

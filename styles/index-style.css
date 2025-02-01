@@ -21,7 +21,7 @@ body {
 }
 
 .web-lang {
-    filter: brightness(50%);
+    filter: brightness(50%) opacity(40%);
     position: absolute;
     top: 1%;
     left: 1%;
@@ -30,7 +30,7 @@ body {
 }
 
 .web-lang:hover {
-    filter: brightness(75%);
+    filter: brightness(75%) opacity(60%);
 }
 
 .tool-display {
@@ -69,11 +69,11 @@ body {
 
     100%,
     0% {
-        background-color: rgba(158, 108, 216, 0.8);
+        background-color: rgba(241, 184, 243, 0.8);
     }
 
     50% {
-        background-color: rgba(90, 128, 184, 0.8);
+        background-color: rgba(165, 197, 245, 0.8);
     }
 }
 
@@ -271,9 +271,12 @@ a {
 
     }
 
-    .lang {
-        filter: grayscale(20%);
+    .web-lang {
+        width: 1.25em;
+        top:0.5em;
+        left:0.5em;
     }
+
 
 
 
