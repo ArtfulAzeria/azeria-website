@@ -6,7 +6,7 @@ window.onload = function () {
 
 function updateLang() {
     document.getElementsByClassName("lang-box")[0].innerHTML =
-            `<img class="web-lang" draggable="false" title="Select language" src="https://hatscripts.github.io/circle-flags/flags/${lang.toLowerCase()}.svg"/>`;
+            `<img class="web-lang" draggable="false" src="https://hatscripts.github.io/circle-flags/flags/${lang.toLowerCase()}.svg"/>`;
 }
 
 function langdrop() {
