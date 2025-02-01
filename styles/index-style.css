@@ -239,7 +239,11 @@ a {
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
-    
+    .body-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 4%;
+    }
 
     .avatar {
         flex: 1;
