@@ -11,9 +11,21 @@ body {
 
     min-height: 100%;
 
-    background: linear-gradient(123deg, rgb(0, 40, 59), rgb(36, 0, 51), rgb(0, 36, 56));
-    background-size: 200% 200%;
-    animation: gradient-background 10s ease infinite;
+    background: linear-gradient(123deg, rgb(0, 40, 59), rgb(26, 0, 51),  rgb(40, 2, 75), rgb(0, 36, 56));
+    background-size: 400% 400%;
+    animation: gradient-background 40s ease-in-out infinite;
+}
+
+.web-lang {
+    filter: brightness(50%);
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 1.5em;
+}
+
+.web-lang:hover {
+    filter: brightness(75%);
 }
 
 .body-wrapper {
@@ -97,6 +109,7 @@ body {
 
 .col {
     background-color: rgba(127, 77, 160, 0.068);
+    backdrop-filter: blur(10px);
     border-radius: 1em;
     padding: 1em;
     margin: 0.5em;
@@ -127,32 +140,16 @@ body {
     margin-bottom: 8%;
 }
 
+.lang {
+    margin: 2% 0;
+    padding: 1%;
+}
+
 .contact-box {
-    display: flex;
-
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-
     color: white;
     
-    margin: 2% 0 2% 0;
-    padding: 2%; 
-}
-
-.lang-box {
-    user-select: none;
-}
-
-.lang {
-    filter: grayscale(20%);
-    transition: filter 0.2s ease-out;
-
-    margin: 0% 2%;
-}
-
-.lang:hover {
-    filter: grayscale(0%);
+    margin: 2% 0;
+    padding: 1%;
 }
 
 .contact-box:hover {
@@ -162,13 +159,10 @@ body {
         fill: rgb(197, 145, 221);
         color: rgb(197, 145, 221); 
         
-        transition: color 0.3s ease-out, fill 0.3s ease-out;
     }
-    .contact-text>a {
 
-        color: rgb(197, 145, 221);
-        
-        transition: color 0.3s ease-out;
+    a {
+        color: rgb(197, 145, 221); 
     }
 }
 
@@ -177,6 +171,7 @@ svg {
 }
 
 .contact-svg {
+    transition: color 0.4s ease-out, fill 0.4s ease-out;
     flex: 0 0 min-content;
     width: min-content;
     fill: white;
@@ -187,10 +182,15 @@ svg {
     margin: 0 0 0 5%;
 }
 
-.contact-text>a {
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    transition: color 0.4s ease-out;
     text-decoration: none;
     color: rgb(234, 246, 255);
-
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
