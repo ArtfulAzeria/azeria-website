@@ -11,9 +11,7 @@ body {
 
     min-height: 100%;
 
-    background: linear-gradient(123deg, rgb(0, 40, 59), rgb(26, 0, 51), rgb(40, 2, 75), rgb(0, 36, 56));
-    background-size: 400% 400%;
-    animation: gradient-background 40s ease-in-out infinite;
+
 }
 
 .body-wrapper {
@@ -33,22 +31,6 @@ body {
 
 .web-lang:hover {
     filter: brightness(75%);
-}
-
-
-
-@keyframes gradient-background {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 .tool-display {
@@ -111,8 +93,8 @@ body {
 }
 
 .col {
-    background-color: rgba(127, 77, 160, 0.068);
-    backdrop-filter: blur(10px);
+    background-color: rgba(127, 77, 160, 0.002);
+    backdrop-filter: blur(0.5em);
     border-radius: 1em;
     padding: 1em;
     margin: 0.5em;
@@ -153,19 +135,21 @@ body {
 
     margin: 2% 0;
     padding: 1%;
+
+    transition: filter 0.1s ease-out;
 }
 
 .contact-box:hover {
     filter: drop-shadow(0 0 1em #edcef3);
 
     .contact-svg {
-        fill: rgb(197, 145, 221);
-        color: rgb(197, 145, 221);
+        fill: rgb(203, 184, 221);
+        color: rgb(203, 184, 221);
 
     }
 
     a {
-        color: rgb(197, 145, 221);
+        color: rgb(203, 184, 221);
     }
 }
 
@@ -199,49 +183,63 @@ a {
 .code-contrib-wrap {
     display: flex;
     flex-direction: column;
-    
+
     .code-contrib {
-        background-color: #252525a2;
+        background-color: #25252536;
+        transition: background-color 0.4s ease-out;
         border-style: solid;
-        border-color: rgba(233, 233, 233, 0.719);
+        border-color: rgba(233, 233, 233, 0.185);
         border-width: 0.12em;
         border-radius: 0.6em;
 
         padding: 0.5em;
         margin: 0.5em 0;
 
-        div {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
 
-            h3 {
-                color: rgb(214, 188, 230);
-                display: inline !important;
-                margin: 0 0 0 0.5em;
+        a {
+            flex-direction: column;
+            align-items: flex-start;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                h3 {
+                    color: rgb(214, 188, 230);
+                    display: inline !important;
+                    margin: 0 0 0 0.5em;
+                }
+
+                img {
+                    width: 1.5em;
+                    height: 1.5em;
+                    border-radius: 100%;
+                }
             }
 
-            img {
-                width: 1.5em;
-                height: 1.5em;
-                border-radius: 100%;
+            p {
+                text-align: justify;
+                color: rgb(204, 204, 204);
+                margin: 0.6em 0;
             }
-        }
 
-        p {
-            text-align: justify;
-            color: rgb(204, 204, 204);
-            margin: 0.6em 0 0 0;
+            .tool-display {
+                p {
+                    margin: 0;
+                    color: #000000;
+                }
+            }
         }
     }
 }
 
+.code-contrib:hover {
+    background-color: #3d3d3d6b;
+}
+
 @media only screen and (hover: none) and (pointer: coarse) {
-    .body-wrapper {
-        display: flex;
-        flex-direction: column;
-        padding: 4%;
-    }
+    
 
     .avatar {
         flex: 1;
