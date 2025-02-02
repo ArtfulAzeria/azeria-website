@@ -9,15 +9,16 @@ body {
     margin: 0;
     padding: 0;
 
-    min-height: 100%;
-
-
+    min-height:  100%;
 }
 
 .body-wrapper {
     display: flex;
     flex-direction: row;
     padding: 4%;
+    position: fixed; 
+    inset: 0; 
+    overflow: auto;
 }
 
 .web-lang {
@@ -195,6 +196,59 @@ a {
         padding: 0.5em;
         margin: 0.5em 0;
 
+        a {
+            flex-direction: column;
+            align-items: flex-start;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                h3 {
+                    color: rgb(214, 188, 230);
+                    display: inline !important;
+                    margin: 0 0 0 0.5em;
+                }
+
+                img {
+                    width: 1.5em;
+                    height: 1.5em;
+                    border-radius: 100%;
+                }
+            }
+
+            p {
+                text-align: justify;
+                color: rgb(204, 204, 204);
+                margin: 0.6em 0;
+            }
+
+            .tool-display {
+                p {
+                    margin: 0;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+/*
+.labour-wrap {
+    display: flex;
+    flex-direction: column;
+
+    .labour {
+        background-color: #25252536;
+        transition: background-color 0.4s ease-out;
+        border-style: solid;
+        border-color: rgba(233, 233, 233, 0.185);
+        border-width: 0.12em;
+        border-radius: 0.6em;
+
+        padding: 0.5em;
+        margin: 0.5em 0.5em 0 0;
 
         a {
             flex-direction: column;
@@ -233,6 +287,7 @@ a {
         }
     }
 }
+*/
 
 .code-contrib:hover {
     background-color: #3d3d3d6b;
@@ -276,8 +331,4 @@ a {
         top:0.5em;
         left:0.5em;
     }
-
-
-
-
 }
