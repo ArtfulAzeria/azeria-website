@@ -4,7 +4,7 @@ html {
 
 body {
     font-family: "Ubuntu";
-    color: rgb(255, 255, 255);
+    color: rgb(202, 202, 202);
 
     margin: 0;
     padding: 0;
@@ -24,7 +24,7 @@ a {
 .body-wrapper {
     display: flex;
     flex-direction: row;
-    padding: 4%;
+    padding: 3%;
     position: fixed;
     inset: 0;
     overflow: auto;
@@ -49,7 +49,7 @@ a {
     flex-wrap: wrap;
 }
 
-.tool-link {
+.social-link {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -139,7 +139,7 @@ a {
 .line {
     width: 100%;
     min-width: 13em;
-    border-bottom: 0.35em solid rgb(255, 255, 255);
+    border-bottom: 0.35em solid rgb(202, 202, 202);
     margin-bottom: 8%;
 }
 
@@ -185,11 +185,13 @@ a {
     margin: 0 0 0 5%;
 }
 
+
 .card-wrap {
     --card-border: 0.12em solid rgba(233, 233, 233, 0.185);
     --circunfrence-color: #cccccccc;
     --card-transition: background-color 0.4s ease-out;
-
+    --card-crystal-background: rgba(37, 37, 37, 0.11);
+    --card-refection: rgba(177, 177, 177, 0.030);
 
     display: flex;
     flex-direction: column;
@@ -198,15 +200,25 @@ a {
         transition: var(--card-transition);
         border: var(--card-border);
 
-        background-color: #25252536;
+        background: linear-gradient(
+            -40deg,
+            var(--card-crystal-background) 0%,
+            var(--card-crystal-background) 18%,
+            var(--card-refection) 20%,
+            var(--card-crystal-background) 22%,
+            var(--card-crystal-background) 68%,
+            var(--card-refection) 70%,
+            var(--card-crystal-background) 72%
+        );
+        
         border-radius: 0.6em;
         padding: 0.5em;
         margin: 0.5em 0;
-        
 
-        a, div {
+        .inner-card {
             flex-direction: column;
             align-items: flex-start;
+            
 
             div {
                 display: flex;
@@ -254,7 +266,7 @@ a {
     }
     
     .card:hover {
-        background-color: #3d3d3d6b;
+        background-color: rgba(121, 121, 121, 0.12);
     }
 }
 
