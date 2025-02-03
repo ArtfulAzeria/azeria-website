@@ -1,13 +1,9 @@
 var lang = navigator.language.split("-")[1];
 
-window.onload = function () {
-    if (isLocalStorageAviable() && checkLangInLS()) {
-        lang = localStorage.getItem("pref-lang");
-    }
-    
-    updateLang();
+if (isLocalStorageAviable() && checkLangInLS()) {
+    lang = localStorage.getItem("pref-lang");
 }
-
+updateLang();
 
 function updateLang() {
     document.getElementsByClassName("lang-box")[0].innerHTML =

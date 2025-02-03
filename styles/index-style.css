@@ -9,15 +9,24 @@ body {
     margin: 0;
     padding: 0;
 
-    min-height:  100%;
+    min-height: 100%;
+}
+
+svg {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
 }
 
 .body-wrapper {
     display: flex;
     flex-direction: row;
     padding: 4%;
-    position: fixed; 
-    inset: 0; 
+    position: fixed;
+    inset: 0;
     overflow: auto;
 }
 
@@ -38,6 +47,14 @@ body {
     user-select: none;
     display: flex;
     flex-wrap: wrap;
+}
+
+.tool-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transition: color 0.4s ease-out;
 }
 
 .tool {
@@ -79,14 +96,14 @@ body {
 }
 
 .left-col {
+    
     flex: 1;
-
     display: flex;
     flex-direction: column;
 }
 
 .middle-col {
-    flex: 2;
+    flex: 3;
 }
 
 .right-col {
@@ -98,7 +115,7 @@ body {
     backdrop-filter: blur(0.5em);
     border-radius: 1em;
     padding: 1em;
-    margin: 0.5em;
+    margin: 1em;
 
 }
 
@@ -154,9 +171,7 @@ body {
     }
 }
 
-svg {
-    vertical-align: middle;
-}
+
 
 .contact-svg {
     transition: color 0.4s ease-out, fill 0.4s ease-out;
@@ -170,33 +185,26 @@ svg {
     margin: 0 0 0 5%;
 }
 
-a {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+.card-wrap {
+    --card-border: 0.12em solid rgba(233, 233, 233, 0.185);
+    --circunfrence-color: #cccccccc;
+    --card-transition: background-color 0.4s ease-out;
 
-    transition: color 0.4s ease-out;
-    text-decoration: none;
-    color: rgb(234, 246, 255);
-}
 
-.code-contrib-wrap {
     display: flex;
     flex-direction: column;
 
-    .code-contrib {
-        background-color: #25252536;
-        transition: background-color 0.4s ease-out;
-        border-style: solid;
-        border-color: rgba(233, 233, 233, 0.185);
-        border-width: 0.12em;
-        border-radius: 0.6em;
+    .card {
+        transition: var(--card-transition);
+        border: var(--card-border);
 
+        background-color: #25252536;
+        border-radius: 0.6em;
         padding: 0.5em;
         margin: 0.5em 0;
+        
 
-        a {
+        a, div {
             flex-direction: column;
             align-items: flex-start;
 
@@ -214,61 +222,20 @@ a {
                 img {
                     width: 1.5em;
                     height: 1.5em;
+                    border-style: solid;
+                    border-width: 0.1em;
+                    border-color: var(--circunfrence-color);
                     border-radius: 100%;
                 }
-            }
 
-            p {
-                text-align: justify;
-                color: rgb(204, 204, 204);
-                margin: 0.6em 0;
-            }
-
-            .tool-display {
-                p {
-                    margin: 0;
-                    color: #000000;
-                }
-            }
-        }
-    }
-}
-
-/*
-.labour-wrap {
-    display: flex;
-    flex-direction: column;
-
-    .labour {
-        background-color: #25252536;
-        transition: background-color 0.4s ease-out;
-        border-style: solid;
-        border-color: rgba(233, 233, 233, 0.185);
-        border-width: 0.12em;
-        border-radius: 0.6em;
-
-        padding: 0.5em;
-        margin: 0.5em 0.5em 0 0;
-
-        a {
-            flex-direction: column;
-            align-items: flex-start;
-
-            div {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-
-                h3 {
-                    color: rgb(214, 188, 230);
-                    display: inline !important;
-                    margin: 0 0 0 0.5em;
-                }
-
-                img {
+                svg {
+                    border-style: solid;
+                    border-width: 0.1em;
+                    border-color: var(--circunfrence-color);
+                    border-radius: 100%;
                     width: 1.5em;
                     height: 1.5em;
-                    border-radius: 100%;
+
                 }
             }
 
@@ -280,17 +247,15 @@ a {
 
             .tool-display {
                 p {
-                    margin: 0;
                     color: #000000;
                 }
             }
         }
     }
-}
-*/
-
-.code-contrib:hover {
-    background-color: #3d3d3d6b;
+    
+    .card:hover {
+        background-color: #3d3d3d6b;
+    }
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
@@ -328,7 +293,11 @@ a {
 
     .web-lang {
         width: 1.25em;
-        top:0.5em;
-        left:0.5em;
+        top: 0.5em;
+        left: 0.5em;
+    }
+
+    .col {
+        margin: 0.5em;
     }
 }
