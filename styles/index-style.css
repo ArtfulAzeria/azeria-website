@@ -37,6 +37,7 @@ a {
     left: 1%;
     width: 1.5em;
     cursor: pointer;
+    display: none;
 }
 
 .web-lang:hover {
@@ -154,11 +155,11 @@ a {
     margin: 2% 0;
     padding: 1%;
 
-    transition: filter 0.1s ease-out;
+    transition: filter 0.2s ease-out;
 }
 
 .contact-box:hover {
-    filter: drop-shadow(0 0 1em #edcef3);
+    filter: drop-shadow(0 0 1em #edcef35e);
 
     .contact-svg {
         fill: rgb(203, 184, 221);
@@ -171,27 +172,30 @@ a {
     }
 }
 
-
-
 .contact-svg {
-    transition: color 0.4s ease-out, fill 0.4s ease-out;
+    transition: color 0.3s ease-out, fill 0.3s ease-out;
     flex: 0 0 min-content;
     width: min-content;
     fill: white;
 }
 
 .contact-text {
-    flex: 1;
     margin: 0 0 0 5%;
+    width: fit-content;
 }
 
+.contact-link {
+        opacity: 0.5;
+        align-self: center;
+}
 
 .card-wrap {
     --card-border: 0.12em solid rgba(233, 233, 233, 0.185);
     --circunfrence-color: #cccccccc;
-    --card-transition: background-color 0.4s ease-out;
     --card-crystal-background: rgba(37, 37, 37, 0.11);
     --card-refection: rgba(177, 177, 177, 0.030);
+    --card-transition:  background-color 0.3s ease-out,
+                        transform 0.3s ease-out;
 
     display: flex;
     flex-direction: column;
@@ -218,7 +222,6 @@ a {
         .inner-card {
             flex-direction: column;
             align-items: flex-start;
-            
 
             div {
                 display: flex;
@@ -229,6 +232,13 @@ a {
                     color: rgb(214, 188, 230);
                     display: inline !important;
                     margin: 0 0 0 0.5em;
+                }
+
+                .card-link {
+                    border-style: none;
+                    align-self: center;
+                    opacity: 50%;
+                    transition: color 0.6s ease-out;
                 }
 
                 img {
@@ -264,9 +274,20 @@ a {
             }
         }
     }
-    
-    .card:hover {
-        background-color: rgba(121, 121, 121, 0.12);
+}
+
+/* .linkable-card, especially the :hover, should be here down the .card-wrap,
+otherwise the background color would be overridden and won't apply unless
+!important added to it. */
+.linkable-card {
+    transition: var(--card-transition);
+}
+
+.linkable-card:hover {
+    background-color: rgba(121, 121, 121, 0.12);
+    transform: scale(1.01);
+    .card-link {
+        color: rgb(188, 228, 255);
     }
 }
 
@@ -312,4 +333,6 @@ a {
     .col {
         margin: 0.5em;
     }
+
+
 }

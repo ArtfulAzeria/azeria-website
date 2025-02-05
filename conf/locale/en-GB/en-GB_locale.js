@@ -9,5 +9,9 @@ enGB = {
     "osp-3": "BlueSky bot that posts daily a countdown to new year.",
     "open-source-contrib": "My open source contributions",
     "osc-1": "Translation and proofreading.",
-    "osc-2": "Visualization bug fixing."
+    "osc-2": "Visualization bug fixing.",
+    "work-experience": "Work experience",
+    "exp-1": "Lead developer for the company web page. Responsible for updating it.",
+    "exp-2": "APIs development in a big team. Extending functionality and fixing bugs.",
+    "exp-3": "AWS setup and test coverage for a major bank."
 }

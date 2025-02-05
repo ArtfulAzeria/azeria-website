@@ -4,10 +4,14 @@ esES = {
     "mylangs_1": "Español - Nativo",
     "mylangs_2": "Inglés - Avanzado",
     "open-source-personal": "Mis proyectos de código abierto",
-    "osp-1": "La página web que estás viendo actualmente",
+    "osp-1": "La página web que estás viendo actualmente.",
     "osp-2": "Bot para BlueSky que publica las alertas meteorológicas de España dadas por la AEMET.",
-    "osp-3": "Bot para BlueSky que publica diariamente una cuenta atrás para año nuevo.",
+    "osp-3": "Bot para BlueSky que publica diariamente una cuenta regresiva para año nuevo.",
     "open-source-contrib": "Mis contribuciones de código abierto",
     "osc-1": "Traducción y corrección de textos.",
-    "osc-2": "Corrección de errores visuales."
+    "osc-2": "Corrección de errores visuales.",
+    "work-experience": "Experiencia laboral",
+    "exp-1": "Líder del desarrollo para la página web de la compañía. Responsable de su actualización.",
+    "exp-2": "Desarrollo de APIs en un gran equipo. Extendiendo la funcionalidad y corrigiendo errores.",
+    "exp-3": "Configuración de AWS y cobertura de código para un banco conocido."
 }
