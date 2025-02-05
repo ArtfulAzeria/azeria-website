@@ -94,6 +94,34 @@ var LangConf = /** @class */ (function () {
             this.updateClassFromLocale("es-ES");
         }
     };
+    LangConf.prototype.updateTexts = function () {
+        if (this.getClassLocale() === "en-GB") {
+            fetch("../conf/locale/en-GB/en-GB_locale.json")
+                .then(function (res) { return res.json(); })
+                .then(function (res) {
+                console.log("json aviable");
+                console.log(res);
+                for (var prprty in res) {
+                    if (Object.prototype.hasOwnProperty.call(res, prprty)) {
+                        document.getElementById(prprty).innerText = res[prprty];
+                    }
+                }
+            });
+        }
+        else if (this.getClassLocale() === "es-ES") {
+            fetch("../conf/locale/es-ES/es-ES_locale.json")
+                .then(function (res) { return res.json(); })
+                .then(function (res) {
+                console.log("json aviable");
+                console.log(res);
+                for (var prprty in res) {
+                    if (Object.prototype.hasOwnProperty.call(res, prprty)) {
+                        document.getElementById(prprty).innerText = res[prprty];
+                    }
+                }
+            });
+        }
+    };
     return LangConf;
 }());
 var langconf = new LangConf();
@@ -101,4 +129,5 @@ function updateLang() {
     langconf.changeLocale();
     langconf.updateLocalStorage();
     langconf.updateSrc(langconf.getCountry);
+    langconf.updateTexts();
 }
