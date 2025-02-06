@@ -1,5 +1,6 @@
 :root {
     --powder-blue: rgb(176, 224, 230);
+    --pastel-pink: rgb(248, 200, 220);
     --alabaster-white: rgb(237, 234, 222);
     --bone-white: rgb(249, 246, 238);
     --charcoal-grey: rgb(54, 69, 79);
@@ -199,7 +200,7 @@ a {
                 align-items: center;
 
                 h3 {
-                    color: rgb(214, 188, 230);
+                    color: var(--pastel-pink);
                     display: inline !important;
                     margin: 0 0 0 0.5em;
                 }
@@ -272,11 +273,11 @@ a {
 
     100%,
     0% {
-        background-color: rgba(238, 210, 255, 0.6);
+        background-color: rgba(245, 231, 253, 0.6);
     }
 
     50% {
-        background-color: rgba(177, 255, 255, 0.6);
+        background-color: rgba(198, 247, 247, 0.6);
     }
 }
 
@@ -291,7 +292,7 @@ otherwise the background color would be overridden and won't apply unless
     background-color: rgba(121, 121, 121, 0.12);
     transform: scale(1.01);
     .card-link {
-        color: var(--powder-blue);
+        color: var(--pastel-pink);
     }
 }
 
