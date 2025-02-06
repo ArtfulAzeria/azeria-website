@@ -1,10 +1,18 @@
+:root {
+    --powder-blue: rgb(176, 224, 230);
+    --alabaster-white: rgb(237, 234, 222);
+    --bone-white: rgb(249, 246, 238);
+    --charcoal-grey: rgb(54, 69, 79);
+    --licorice-black: rgb(27, 18, 18);
+}
+
 html {
     height: 100%;
 }
 
 body {
     font-family: "Ubuntu";
-    color: rgb(202, 202, 202);
+    color: var(--alabaster-white);
 
     margin: 0;
     padding: 0;
@@ -58,44 +66,6 @@ a {
     transition: color 0.4s ease-out;
 }
 
-.tool {
-    display: inline-flex;
-
-    height: 1.2em;
-    width: fit-content;
-    padding: 0.1em 0.5em 0.1em 0.5em;
-    margin: 0.1em 0.1em 0.1em 0.1em;
-
-    /* Center in both axis*/
-    justify-content: center;
-    align-items: center;
-
-    border: 0.075em;
-    border-color: rgb(29, 29, 29);
-    border-style: solid;
-    border-radius: 1em;
-
-    color: rgba(0, 0, 0, 0.70);
-
-    font-size: 80%;
-    font-weight: 600;
-
-    animation: rainbow 10s linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes rainbow {
-
-    100%,
-    0% {
-        background-color: rgba(241, 184, 243, 0.8);
-    }
-
-    50% {
-        background-color: rgba(165, 197, 245, 0.8);
-    }
-}
-
 .left-col {
     
     flex: 1;
@@ -140,7 +110,7 @@ a {
 .line {
     width: 100%;
     min-width: 13em;
-    border-bottom: 0.35em solid rgb(202, 202, 202);
+    border-bottom: 0.35em solid var(--alabaster-white);
     margin-bottom: 8%;
 }
 
@@ -176,7 +146,7 @@ a {
     transition: color 0.3s ease-out, fill 0.3s ease-out;
     flex: 0 0 min-content;
     width: min-content;
-    fill: white;
+    fill: var(--alabaster-white);
 }
 
 .contact-text {
@@ -191,7 +161,7 @@ a {
 
 .card-wrap {
     --card-border: 0.12em solid rgba(233, 233, 233, 0.185);
-    --circunfrence-color: #cccccccc;
+    --circunfrence-color: var(--alabaster-white);
     --card-crystal-background: rgba(37, 37, 37, 0.11);
     --card-refection: rgba(177, 177, 177, 0.030);
     --card-transition:  background-color 0.3s ease-out,
@@ -261,18 +231,52 @@ a {
                 }
             }
 
-            p {
+            .card-text {
                 text-align: justify;
-                color: rgb(204, 204, 204);
+                color: var(--alabaster-white);
                 margin: 0.6em 0;
             }
-
-            .tool-display {
-                p {
-                    color: #000000;
-                }
-            }
         }
+    }
+}
+
+.tool {
+    display: inline-flex;
+
+    height: 1.2em;
+    width: fit-content;
+    padding: 0.1em 0.5em 0.1em 0.5em;
+    margin: 0.1em 0.1em 0.1em 0.1em;
+
+    /* Center in both axis*/
+    justify-content: center;
+    align-items: center;
+
+    border: 0.001em;
+    border-color: var(--charcoal-grey);
+    border-style: solid;
+    border-radius: 1em;
+
+    p {
+        color: var(--licorice-black);
+    }
+
+    font-size: 80%;
+    font-weight: 600;
+
+    animation: rainbow 10s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+
+    100%,
+    0% {
+        background-color: rgba(238, 210, 255, 0.6);
+    }
+
+    50% {
+        background-color: rgba(177, 255, 255, 0.6);
     }
 }
 
@@ -287,7 +291,7 @@ otherwise the background color would be overridden and won't apply unless
     background-color: rgba(121, 121, 121, 0.12);
     transform: scale(1.01);
     .card-link {
-        color: rgb(188, 228, 255);
+        color: var(--powder-blue);
     }
 }
 
@@ -320,8 +324,7 @@ otherwise the background color would be overridden and won't apply unless
 
     .line {
         width: 100%;
-        border-bottom: 0.4em solid rgb(255, 255, 255);
-
+        border-bottom: 0.4em solid var(--alabaster-white);
     }
 
     .web-lang {

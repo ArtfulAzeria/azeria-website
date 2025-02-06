@@ -7,7 +7,7 @@ var LangConf = /** @class */ (function () {
         }
         this.updateSrc(this.getCountry);
         this.updateTexts();
-        this.display();
+        this.displayImage();
         this.updateLocalStorage();
     }
     Object.defineProperty(LangConf.prototype, "getLanguage", {
@@ -38,7 +38,7 @@ var LangConf = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
-    LangConf.prototype.display = function () {
+    LangConf.prototype.displayImage = function () {
         var element = document.getElementById("web-lang");
         if (element !== null) {
             element.style.display = "block";

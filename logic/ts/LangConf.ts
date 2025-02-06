@@ -1,5 +1,3 @@
-
-
 const LS_LOCALE_KEY = "locale";
 
 class LangConf {
@@ -145,6 +143,3 @@ function updateLang() {
     langconf.updateSrc(langconf.getCountry);
     langconf.updateTexts();
 }
-
-
-
