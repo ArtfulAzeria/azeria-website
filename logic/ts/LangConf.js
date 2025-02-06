@@ -6,6 +6,7 @@ var LangConf = /** @class */ (function () {
             this.updateClassFromLocale(this.getLocalStorageLocale());
         }
         this.updateSrc(this.getCountry);
+        this.updateTexts();
         this.display();
         this.updateLocalStorage();
     }

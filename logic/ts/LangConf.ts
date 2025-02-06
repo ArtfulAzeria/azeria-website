@@ -14,7 +14,8 @@ class LangConf {
         }
 
         this.updateSrc(this.getCountry);
-        this.display();
+        this.updateTexts();
+        this.displayImage();
         this.updateLocalStorage();
     }
 
@@ -33,8 +34,8 @@ class LangConf {
     public set country(country : string) {
         this._country = country;
     }
-
-    private display() {
+    
+    private displayImage(): void {
         var element: HTMLElement | null = document.getElementById("web-lang");
         if (element !== null) {
             element.style.display = "block";
