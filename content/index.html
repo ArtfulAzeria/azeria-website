@@ -16,558 +16,569 @@
 <body>
     <div class="body-wrapper">
 
-        <div class="lang-box" onclick="updateLang()">
-            <img id="web-lang" class="web-lang" draggable="false"
-                src="https://hatscripts.github.io/circle-flags/flags/gb.svg" />
-        </div>
-
-
-        <div class="left-col col">
-            <img class="avatar" src="../resources/azeria/LogoAzeriaNoBGx640.png" alt="Avatar de Azeria">
-
-            <h1 class="name">Azeria</h1>
-            <div class="line"></div>
-            <h2 id="socials-title">Where to find me</h2>
-
-            <div class="contact-box">
-                <a class="social-link" href="mailto:azeria.dev@proton.me">
-                    <div class="contact-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="20" height="16" x="2" y="4" rx="2" />
-                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                        </svg>
-                    </div>
-                    <p class="contact-text">admin@azeria.dev
-                    </p>
-                    <svg class="contact-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        viewBox="-10 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-link">
-                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                    </svg>
-                </a>
-            </div>
-
-            <div class="contact-box">
-                <a class="social-link" href="https://bsky.app/profile/azeria.dev">
-                    <div class="contact-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="-16 -28 600 529"
-                            fill="none" stroke="currentColor" stroke-width="50" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path
-                                d="M123.121 33.6637C188.241 82.5526 258.281 181.681 284 234.873C309.719 181.681 379.759 82.5526 444.879 33.6637C491.866 -1.61183 568 -28.9064 568 57.9464C568 75.2916 558.055 203.659 552.222 224.501C531.947 296.954 458.067 315.434 392.347 304.249C507.222 323.8 536.444 388.56 473.333 453.32C353.473 576.312 301.061 422.461 287.631 383.039C285.169 375.812 284.017 372.431 284 375.306C283.983 372.431 282.831 375.812 280.369 383.039C266.939 422.461 214.527 576.312 94.6667 453.32C31.5556 388.56 60.7778 323.8 175.653 304.249C109.933 315.434 36.0535 296.954 15.7778 224.501C9.94525 203.659 0 75.2916 0 57.9464C0 -28.9064 76.1345 -1.61183 123.121 33.6637Z" />
-                        </svg>
-                    </div>
-                    <p class="contact-text">@azeria.dev</p>
-                    <svg class="contact-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        viewBox="-10 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-link">
-                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                    </svg>
-                </a>
-            </div>
-
-            <div class="contact-box">
-                <a class="social-link" href="https://github.com/ArtfulAzeria">
-                    <div class="contact-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-                            <path d="M9 18c-4.51 2-5-2-7-2" />
-                        </svg>
-                    </div>
-                    <p class="contact-text">ArtfulAzeria</p>
-                    <svg class="contact-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        viewBox="-10 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-link">
-                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                    </svg>
-                </a>
-            </div>
-
-            <div class="contact-box">
-                <a class="social-link" href="https://ko-fi.com/azeria_dev">
-                    <div class="contact-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ko-fi" width="16" height="16"
-                            stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M3.249,19.75c-0.024,0-0.049-0.001-0.073-0.004c-1.021-0.1-2.993-0.885-3.153-3.14C-0.036,12.483,0.041,5.789,0.042,5.722C0.112,4.979,0.578,4.25,1.443,4.25h17.036c1.63,0.188,4.723,1.428,5.393,4.81c0.371,1.871-0.068,3.645-1.236,4.992c-1.198,1.383-3.048,2.181-5.153,2.243c-0.2,1.872-1.316,3.095-3.143,3.4c-0.039,0.006-0.079,0.01-0.119,0.01c-3.545,0.023-10.97,0.045-10.97,0.045C3.25,19.75,3.25,19.75,3.249,19.75z M1.537,5.816c0.004,0-0.073,6.668-0.016,10.727c0.101,1.408,1.49,1.669,1.772,1.707c0.627-0.002,7.457-0.022,10.857-0.045c0.538-0.093,1.913-0.405,1.863-2.651c-0.004-0.208,0.078-0.409,0.228-0.555c0.15-0.146,0.358-0.229,0.562-0.211c1.95,0.107,3.664-0.523,4.699-1.719c0.858-0.99,1.177-2.311,0.898-3.719c-0.627-3.169-3.976-3.602-4.009-3.605L1.552,5.75C1.545,5.772,1.54,5.797,1.537,5.816L1.537,5.816z">
-                            </path>
-                            <path
-                                d="M17.475 13.75c-.458 0-.777-.031-.799-.033C16.292 13.679 16 13.356 16 12.971V7.75C16 7.336 16.336 7 16.75 7h1.785c.057 0 .113.007.168.02.854.196 2.471 1.094 2.471 3.077 0 1.8-.889 3.066-2.502 3.565-.043.013-.087.022-.132.028C18.154 13.736 17.783 13.75 17.475 13.75zM17.5 8.5v3.75c.233-.001.508-.011.792-.041.943-.314 1.382-.987 1.382-2.112 0-1.14-.964-1.514-1.238-1.597H17.5zM8.508 17.002c-.145 0-.301-.03-.462-.106-.037-.017-.072-.037-.105-.06-.133-.092-.188-.146-.188-.146-.1-.091-.347-.3-.669-.571-1.391-1.176-2.79-2.373-3.273-2.974-.95-1.182-1.22-3.097-.026-4.258 0 0 0 0 0 0 1.052-1.021 3.123-1.229 4.71-.083.709-.508 2.042-1.174 3.592-.564.983.388 1.639 1.109 1.848 2.033.225.998-.112 2.129-.881 2.953-1.213 1.293-3.802 3.455-3.912 3.547C9.009 16.894 8.781 17.002 8.508 17.002zM8.193 15.611C8.183 15.62 8.171 15.63 8.16 15.64 8.163 15.638 8.174 15.628 8.193 15.611zM8.766 15.584h.01H8.766zM4.83 9.964c-.597.581-.291 1.693.149 2.241.433.538 2.216 2.044 3.072 2.768.173.146.325.275.448.38.751-.637 2.554-2.188 3.458-3.151.427-.457.629-1.085.513-1.597-.099-.438-.413-.763-.934-.968-1.336-.528-2.496.653-2.508.665-.14.146-.332.229-.534.23C8.301 10.51 8.1 10.454 7.957 10.312 6.912 9.259 5.407 9.404 4.83 9.964L4.83 9.964z">
-                            </path>
-                        </svg>
-                    </div>
-                    <p class="contact-text">azeria_dev</p>
-                    <svg class="contact-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        viewBox="-10 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-link">
-                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                    </svg>
-                </a>
-            </div>
-
-            <div class="contact-box">
-                <a class="social-link" href="https://es.wikipedia.org/wiki/Usuario:CraftyAzeria">
-                    <div class="contact-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 98.05 98.05"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155
-                            c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489
-                            c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475
-                            c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067
-                            c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514
-                            c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213
-                            l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683
-                            c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56
-                            L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194
-                            l0.032-1.956L98.023,17.465z" />
-                        </svg>
-                    </div>
-                    <p class="contact-text">CraftyAzeria</p>
-                    <svg class="contact-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        viewBox="-10 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-link">
-                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                    </svg>
-                </a>
-            </div>
-
-            <h2 id="mylangs-title">My languages</h2>
-            <p id="mylangs_1" class="lang">Spanish - Native</p>
-            <p id="mylangs_2" class="lang">English - Advanced</p>
-        </div>
-
-        <div class="middle-col col">
-            <h2 id="open-source-personal">My open source projects</h2>
-            <div class="card-wrap">
-                <a class="card linkable-card" href="https://github.com/ArtfulAzeria/azeria-tests">
-                    <div class="inner-card">
-                        <div>
-                            <img src="../resources/azeria/LogoAzeriax128.ico" alt="Avatar para el bot Aemet Avisa">
-                            <h3 class="contrib-title">Web azeria.dev</h3>
-                            <svg class="card-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                viewBox="-5 0 34 34" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
-                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                            </svg>
-                        </div>
-                        <p id="osp-1" class="card-text">The web page you are currently seeing.</p>
-                        <div class="tool-display">
-                            <div class="tool">
-                                <p><i class="devicon-bash-plain"></i> Bash</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-cloudflare-plain"></i> Cloudflare</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-css3-plain"></i> CSS3</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-docker-plain"></i> Docker</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-git-plain"></i> Git</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-github-plain"></i> GitHub</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-html5-plain"></i> HTML5</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-javascript-plain"></i> JavaScript</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-markdown-plain"></i> Markdown</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-nginx-plain"></i> Nginx</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-powershell-plain"></i> PowerShell</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-ssh-plain"></i> SSH</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-typescript-plain"></i> TypeScript</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-ubuntu-plain"></i> Ubuntu</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-vscode-plain"></i> VSC</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-yaml-plain"></i> YAML</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="card linkable-card" href="https://github.com/ArtfulAzeria/aemet-avisa">
-                    <div class="inner-card">
-                        <div>
-                            <img src="../resources/AemetAvisa.jpg" alt="Avatar para el bot Aemet Avisa">
-                            <h3 class="contrib-title">Aemet Avisa</h3>
-                            <svg class="card-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                viewBox="-5 0 34 34" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
-                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                            </svg>
-                        </div>
-                        <p id="osp-2" class="card-text">BlueSky bot that posts Spain meteorological alerts given by
-                            AEMET.</p>
-                        <div class="tool-display">
-                            <div class="tool">
-                                <p><i class="devicon-bash-plain"></i> Bash</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-docker-plain"></i> Docker</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-git-plain"></i> Git</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-github-plain"></i> GitHub</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-json-plain"></i> JSON</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-markdown-plain"></i> Markdown</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-npm-original-wordmark"></i> NPM</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-powershell-plain"></i> PowerShell</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-pycharm-plain"></i> Pycharm</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-python-plain"></i> Python</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-ssh-plain"></i> SSH</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-typescript-plain"></i> TypeScript</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-ubuntu-plain"></i> Ubuntu</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-vscode-plain"></i> VSC</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-xml-plain"></i> XML</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-yaml-plain"></i> YAML</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="card linkable-card" href="https://github.com/ArtfulAzeria/year-left">
-                    <div class="inner-card">
-                        <div>
-                            <img src="../resources/YearLeft.jpg" alt="Avatar para el bot Year Left">
-                            <h3 class="contrib-title">Year Left</h3>
-                            <svg class="card-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                viewBox="-5 0 34 34" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
-                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                            </svg>
-                        </div>
-                        <p id="osp-3" class="card-text">BlueSky bot that posts daily a countdown to new year.</p>
-                        <div class="tool-display">
-                            <div class="tool">
-                                <p><i class="devicon-bash-plain"></i> Bash</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-docker-plain"></i> Docker</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-git-plain"></i> Git</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-github-plain"></i> GitHub</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-markdown-plain"></i> Markdown</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-npm-original-wordmark"></i> NPM</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-powershell-plain"></i> PowerShell</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-ssh-plain"></i> SSH</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-typescript-plain"></i> TypeScript</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-ubuntu-plain"></i> Ubuntu</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-vscode-plain"></i> VSC</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-yaml-plain"></i> YAML</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <h2 id="open-source-contrib">My open source contributions</h2>
-            <div class="card-wrap">
-                <a class="card linkable-card" href="https://github.com/electricitymaps/electricitymaps-contrib">
-                    <div class="inner-card">
-                        <div>
-                            <img src="../resources/ElectricityMaps.png" alt="Electricity Maps Logo">
-                            <h3 class="contrib-title">Electricity Maps</h3>
-                            <svg class="card-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                viewBox="-5 0 34 34" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
-                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                            </svg>
-                        </div>
-                        <p id="osc-1" class="card-text">Translation and proofreading.</p>
-                        <div class="tool-display">
-                            <div class="tool">
-                                <p><i class="devicon-git-plain"></i> Git</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-github-plain"></i> GitHub</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-json-plain"></i> JSON</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-vscode-plain"></i> VSC</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="card linkable-card" href="https://github.com/jackyzha0/quartz">
-                    <div class="inner-card">
-                        <div>
-                            <img src="../resources/Quartz.png" alt="Quartz Logo">
-                            <h3 class="contrib-title">Quartz</h3>
-                            <svg class="card-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                viewBox="-5 0 34 34" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
-                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                            </svg>
-                        </div>
-                        <p id="osc-2" class="card-text">Visualization bug fixing.</p>
-                        <div class="tool-display">
-                            <div class="tool">
-                                <p><i class="devicon-css3-plain"></i> CSS3</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-git-plain"></i> Git</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-html5-plain"></i> HTML5</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-github-plain"></i> GitHub</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-powershell-plain"></i> PowerShell</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-typescript-plain"></i> TypeScript</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-vscode-plain"></i> VSC</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-
-        <div class="right-col col">
-
-            <h2 id="work-experience">Work experience</h2>
-            <div class="card-wrap">
-                <div class="card">
-                    <div class="inner-card">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="-5 -5 34 34"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-briefcase-business">
-                                <path d="M12 12h.01" />
-                                <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-                                <path d="M22 13a18.15 18.15 0 0 1-20 0" />
-                                <rect width="20" height="14" x="2" y="6" rx="2" />
-                            </svg>
-                            <h3>Full Stack</h3>
-                        </div>
-                        <p id="exp-1" class="card-text">Lead developer for the company web page. Responsible for
-                            updating it.</p>
-                        <div class="tool-display">
-                            <div class="tool">
-                                <p><i class="devicon-bash-plain"></i> Bash</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-css3-plain"></i> CSS3</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-filezilla-plain"></i> Filezilla</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-html5-plain"></i> HTML5</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-javascript-plain"></i> JavaScript</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-json-plain"></i> JSON</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-linux-plain"></i> Linux</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-powershell-plain"></i> PowerShell</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-vscode-plain"></i> VSC</p>
-                            </div>
-                        </div>
-                    </div>
+        <nav class="navbar">
+            <a href="https://wisteria-garden.azeria.dev/">
+                <div class="nav-item nav-item-first">
+                    <p>Blog</p>
                 </div>
-                <div class="card">
-                    <div class="inner-card">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="-5 -5 34 34"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-briefcase-business">
-                                <path d="M12 12h.01" />
-                                <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-                                <path d="M22 13a18.15 18.15 0 0 1-20 0" />
-                                <rect width="20" height="14" x="2" y="6" rx="2" />
+            </a>
+            
+
+            <div class="lang-box" onclick="updateLang()">
+                <img id="web-lang" class="web-lang" draggable="false"
+                    src="https://hatscripts.github.io/circle-flags/flags/gb.svg" />
+                    
+            </div>
+        </nav>
+
+        <div class="col-wrap">
+            <div class="left-col col">
+                <img class="avatar" src="../resources/azeria/LogoAzeriaNoBGx640.png" alt="Avatar de Azeria">
+
+                <h1 class="name">Azeria</h1>
+                <div class="line"></div>
+                <h2 id="socials-title">Where to find me</h2>
+
+                <div class="contact-box">
+                    <a class="social-link" href="mailto:azeria.dev@proton.me">
+                        <div class="contact-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                             </svg>
-                            <h3>Backend</h3>
                         </div>
-                        <p id="exp-2" class="card-text">APIs development in a big team. Extending functionality and
-                            fixing bugs.</p>
-                        <div class="tool-display">
-                            <div class="tool">
-                                <p><i class="devicon-dbeaver-plain"></i> DBeaver</p>
+                        <p class="contact-text">admin@azeria.dev
+                        </p>
+                        <svg class="contact-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="-10 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-link">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="contact-box">
+                    <a class="social-link" href="https://bsky.app/profile/azeria.dev">
+                        <div class="contact-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="-16 -28 600 529"
+                                fill="none" stroke="currentColor" stroke-width="50" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M123.121 33.6637C188.241 82.5526 258.281 181.681 284 234.873C309.719 181.681 379.759 82.5526 444.879 33.6637C491.866 -1.61183 568 -28.9064 568 57.9464C568 75.2916 558.055 203.659 552.222 224.501C531.947 296.954 458.067 315.434 392.347 304.249C507.222 323.8 536.444 388.56 473.333 453.32C353.473 576.312 301.061 422.461 287.631 383.039C285.169 375.812 284.017 372.431 284 375.306C283.983 372.431 282.831 375.812 280.369 383.039C266.939 422.461 214.527 576.312 94.6667 453.32C31.5556 388.56 60.7778 323.8 175.653 304.249C109.933 315.434 36.0535 296.954 15.7778 224.501C9.94525 203.659 0 75.2916 0 57.9464C0 -28.9064 76.1345 -1.61183 123.121 33.6637Z" />
+                            </svg>
+                        </div>
+                        <p class="contact-text">@azeria.dev</p>
+                        <svg class="contact-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="-10 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-link">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="contact-box">
+                    <a class="social-link" href="https://github.com/ArtfulAzeria">
+                        <div class="contact-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                <path d="M9 18c-4.51 2-5-2-7-2" />
+                            </svg>
+                        </div>
+                        <p class="contact-text">ArtfulAzeria</p>
+                        <svg class="contact-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="-10 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-link">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="contact-box">
+                    <a class="social-link" href="https://ko-fi.com/azeria_dev">
+                        <div class="contact-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ko-fi" width="16" height="16"
+                                stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3.249,19.75c-0.024,0-0.049-0.001-0.073-0.004c-1.021-0.1-2.993-0.885-3.153-3.14C-0.036,12.483,0.041,5.789,0.042,5.722C0.112,4.979,0.578,4.25,1.443,4.25h17.036c1.63,0.188,4.723,1.428,5.393,4.81c0.371,1.871-0.068,3.645-1.236,4.992c-1.198,1.383-3.048,2.181-5.153,2.243c-0.2,1.872-1.316,3.095-3.143,3.4c-0.039,0.006-0.079,0.01-0.119,0.01c-3.545,0.023-10.97,0.045-10.97,0.045C3.25,19.75,3.25,19.75,3.249,19.75z M1.537,5.816c0.004,0-0.073,6.668-0.016,10.727c0.101,1.408,1.49,1.669,1.772,1.707c0.627-0.002,7.457-0.022,10.857-0.045c0.538-0.093,1.913-0.405,1.863-2.651c-0.004-0.208,0.078-0.409,0.228-0.555c0.15-0.146,0.358-0.229,0.562-0.211c1.95,0.107,3.664-0.523,4.699-1.719c0.858-0.99,1.177-2.311,0.898-3.719c-0.627-3.169-3.976-3.602-4.009-3.605L1.552,5.75C1.545,5.772,1.54,5.797,1.537,5.816L1.537,5.816z">
+                                </path>
+                                <path
+                                    d="M17.475 13.75c-.458 0-.777-.031-.799-.033C16.292 13.679 16 13.356 16 12.971V7.75C16 7.336 16.336 7 16.75 7h1.785c.057 0 .113.007.168.02.854.196 2.471 1.094 2.471 3.077 0 1.8-.889 3.066-2.502 3.565-.043.013-.087.022-.132.028C18.154 13.736 17.783 13.75 17.475 13.75zM17.5 8.5v3.75c.233-.001.508-.011.792-.041.943-.314 1.382-.987 1.382-2.112 0-1.14-.964-1.514-1.238-1.597H17.5zM8.508 17.002c-.145 0-.301-.03-.462-.106-.037-.017-.072-.037-.105-.06-.133-.092-.188-.146-.188-.146-.1-.091-.347-.3-.669-.571-1.391-1.176-2.79-2.373-3.273-2.974-.95-1.182-1.22-3.097-.026-4.258 0 0 0 0 0 0 1.052-1.021 3.123-1.229 4.71-.083.709-.508 2.042-1.174 3.592-.564.983.388 1.639 1.109 1.848 2.033.225.998-.112 2.129-.881 2.953-1.213 1.293-3.802 3.455-3.912 3.547C9.009 16.894 8.781 17.002 8.508 17.002zM8.193 15.611C8.183 15.62 8.171 15.63 8.16 15.64 8.163 15.638 8.174 15.628 8.193 15.611zM8.766 15.584h.01H8.766zM4.83 9.964c-.597.581-.291 1.693.149 2.241.433.538 2.216 2.044 3.072 2.768.173.146.325.275.448.38.751-.637 2.554-2.188 3.458-3.151.427-.457.629-1.085.513-1.597-.099-.438-.413-.763-.934-.968-1.336-.528-2.496.653-2.508.665-.14.146-.332.229-.534.23C8.301 10.51 8.1 10.454 7.957 10.312 6.912 9.259 5.407 9.404 4.83 9.964L4.83 9.964z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="contact-text">azeria_dev</p>
+                        <svg class="contact-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="-10 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-link">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="contact-box">
+                    <a class="social-link" href="https://es.wikipedia.org/wiki/Usuario:CraftyAzeria">
+                        <div class="contact-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 98.05 98.05"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155
+                                c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489
+                                c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475
+                                c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067
+                                c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514
+                                c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213
+                                l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683
+                                c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56
+                                L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194
+                                l0.032-1.956L98.023,17.465z" />
+                            </svg>
+                        </div>
+                        <p class="contact-text">CraftyAzeria</p>
+                        <svg class="contact-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="-10 0 34 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-link">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                        </svg>
+                    </a>
+                </div>
+
+                <h2 id="mylangs-title">My languages</h2>
+                <p id="mylangs_1" class="lang">Spanish - Native</p>
+                <p id="mylangs_2" class="lang">English - Advanced</p>
+            </div>
+
+            <div class="middle-col col">
+                <h2 id="open-source-personal">My open source projects</h2>
+                <div class="card-wrap">
+                    <a class="card linkable-card" href="https://github.com/ArtfulAzeria/azeria-tests">
+                        <div class="inner-card">
+                            <div>
+                                <img src="../resources/azeria/LogoAzeriax128.ico" alt="Avatar para el bot Aemet Avisa">
+                                <h3 class="contrib-title">Web azeria.dev</h3>
+                                <svg class="card-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="-5 0 34 34" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                                </svg>
                             </div>
-                            <div class="tool">
-                                <p><i class="devicon-docker-plain"></i> Docker</p>
+                            <p id="osp-1" class="card-text">The web page you are currently seeing.</p>
+                            <div class="tool-display">
+                                <div class="tool">
+                                    <p><i class="devicon-bash-plain"></i> Bash</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-cloudflare-plain"></i> Cloudflare</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-css3-plain"></i> CSS3</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-docker-plain"></i> Docker</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-git-plain"></i> Git</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-github-plain"></i> GitHub</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-html5-plain"></i> HTML5</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-javascript-plain"></i> JavaScript</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-markdown-plain"></i> Markdown</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-nginx-plain"></i> Nginx</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-powershell-plain"></i> PowerShell</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-ssh-plain"></i> SSH</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-typescript-plain"></i> TypeScript</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-ubuntu-plain"></i> Ubuntu</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-vscode-plain"></i> VSC</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-yaml-plain"></i> YAML</p>
+                                </div>
                             </div>
-                            <div class="tool">
-                                <p><i class="devicon-git-plain"></i> Git</p>
+                        </div>
+                    </a>
+
+                    <a class="card linkable-card" href="https://github.com/ArtfulAzeria/aemet-avisa">
+                        <div class="inner-card">
+                            <div>
+                                <img src="../resources/AemetAvisa.jpg" alt="Avatar para el bot Aemet Avisa">
+                                <h3 class="contrib-title">Aemet Avisa</h3>
+                                <svg class="card-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="-5 0 34 34" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                                </svg>
                             </div>
-                            <div class="tool">
-                                <p><i class="devicon-gitlab-plain"></i> GitLab</p>
+                            <p id="osp-2" class="card-text">BlueSky bot that posts Spain meteorological alerts given by
+                                AEMET.</p>
+                            <div class="tool-display">
+                                <div class="tool">
+                                    <p><i class="devicon-bash-plain"></i> Bash</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-docker-plain"></i> Docker</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-git-plain"></i> Git</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-github-plain"></i> GitHub</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-json-plain"></i> JSON</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-markdown-plain"></i> Markdown</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-npm-original-wordmark"></i> NPM</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-powershell-plain"></i> PowerShell</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-pycharm-plain"></i> Pycharm</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-python-plain"></i> Python</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-ssh-plain"></i> SSH</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-typescript-plain"></i> TypeScript</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-ubuntu-plain"></i> Ubuntu</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-vscode-plain"></i> VSC</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-xml-plain"></i> XML</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-yaml-plain"></i> YAML</p>
+                                </div>
                             </div>
-                            <div class="tool">
-                                <p><i class="devicon-intellij-plain"></i> IntelliJ</p>
+                        </div>
+                    </a>
+
+                    <a class="card linkable-card" href="https://github.com/ArtfulAzeria/year-left">
+                        <div class="inner-card">
+                            <div>
+                                <img src="../resources/YearLeft.jpg" alt="Avatar para el bot Year Left">
+                                <h3 class="contrib-title">Year Left</h3>
+                                <svg class="card-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="-5 0 34 34" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                                </svg>
                             </div>
-                            <div class="tool">
-                                <p><i class="devicon-java-plain"></i> Java</p>
+                            <p id="osp-3" class="card-text">BlueSky bot that posts daily a countdown to new year.</p>
+                            <div class="tool-display">
+                                <div class="tool">
+                                    <p><i class="devicon-bash-plain"></i> Bash</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-docker-plain"></i> Docker</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-git-plain"></i> Git</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-github-plain"></i> GitHub</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-markdown-plain"></i> Markdown</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-npm-original-wordmark"></i> NPM</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-powershell-plain"></i> PowerShell</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-ssh-plain"></i> SSH</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-typescript-plain"></i> TypeScript</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-ubuntu-plain"></i> Ubuntu</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-vscode-plain"></i> VSC</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-yaml-plain"></i> YAML</p>
+                                </div>
                             </div>
-                            <div class="tool">
-                                <p><i class="devicon-jenkins-plain"></i> Jenkins</p>
+                        </div>
+                    </a>
+                </div>
+
+                <h2 id="open-source-contrib">My open source contributions</h2>
+                <div class="card-wrap">
+                    <a class="card linkable-card" href="https://github.com/electricitymaps/electricitymaps-contrib">
+                        <div class="inner-card">
+                            <div>
+                                <img src="../resources/ElectricityMaps.png" alt="Electricity Maps Logo">
+                                <h3 class="contrib-title">Electricity Maps</h3>
+                                <svg class="card-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="-5 0 34 34" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                                </svg>
                             </div>
-                            <div class="tool">
-                                <p><i class="devicon-json-plain"></i> Json</p>
+                            <p id="osc-1" class="card-text">Translation and proofreading.</p>
+                            <div class="tool-display">
+                                <div class="tool">
+                                    <p><i class="devicon-git-plain"></i> Git</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-github-plain"></i> GitHub</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-json-plain"></i> JSON</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-vscode-plain"></i> VSC</p>
+                                </div>
                             </div>
-                            <div class="tool">
-                                <p><i class="devicon-junit-plain"></i> JUnit</p>
+                        </div>
+                    </a>
+
+                    <a class="card linkable-card" href="https://github.com/jackyzha0/quartz">
+                        <div class="inner-card">
+                            <div>
+                                <img src="../resources/Quartz.png" alt="Quartz Logo">
+                                <h3 class="contrib-title">Quartz</h3>
+                                <svg class="card-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="-5 0 34 34" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                                </svg>
                             </div>
-                            <div class="tool">
-                                <p><i class="devicon-postgresql-plain"></i> PostgreSQL</p>
+                            <p id="osc-2" class="card-text">Visualization bug fixing.</p>
+                            <div class="tool-display">
+                                <div class="tool">
+                                    <p><i class="devicon-css3-plain"></i> CSS3</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-git-plain"></i> Git</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-html5-plain"></i> HTML5</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-github-plain"></i> GitHub</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-powershell-plain"></i> PowerShell</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-typescript-plain"></i> TypeScript</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-vscode-plain"></i> VSC</p>
+                                </div>
+
                             </div>
-                            <div class="tool">
-                                <p><i class="devicon-postman-plain"></i> Postman</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="right-col col">
+
+                <h2 id="work-experience">Work experience</h2>
+                <div class="card-wrap">
+                    <div class="card">
+                        <div class="inner-card">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="-5 -5 34 34"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-briefcase-business">
+                                    <path d="M12 12h.01" />
+                                    <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                                    <path d="M22 13a18.15 18.15 0 0 1-20 0" />
+                                    <rect width="20" height="14" x="2" y="6" rx="2" />
+                                </svg>
+                                <h3>Full Stack</h3>
                             </div>
-                            <div class="tool">
-                                <p><i class="devicon-powershell-plain"></i> PowerShell</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-spring-plain"></i> Spring</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-azuresqldatabase-plain"></i> SQL</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-swagger-plain"></i> Swagger</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-trello-plain"></i> Trello</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-xml-plain"></i> XML</p>
+                            <p id="exp-1" class="card-text">Lead developer for the company web page. Responsible for
+                                updating it.</p>
+                            <div class="tool-display">
+                                <div class="tool">
+                                    <p><i class="devicon-bash-plain"></i> Bash</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-css3-plain"></i> CSS3</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-filezilla-plain"></i> Filezilla</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-html5-plain"></i> HTML5</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-javascript-plain"></i> JavaScript</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-json-plain"></i> JSON</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-linux-plain"></i> Linux</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-powershell-plain"></i> PowerShell</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-vscode-plain"></i> VSC</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="inner-card">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="-5 -5 34 34"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-briefcase-business">
-                                <path d="M12 12h.01" />
-                                <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-                                <path d="M22 13a18.15 18.15 0 0 1-20 0" />
-                                <rect width="20" height="14" x="2" y="6" rx="2" />
-                            </svg>
-                            <h3>Backend & DevOps</h3>
+                    <div class="card">
+                        <div class="inner-card">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="-5 -5 34 34"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-briefcase-business">
+                                    <path d="M12 12h.01" />
+                                    <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                                    <path d="M22 13a18.15 18.15 0 0 1-20 0" />
+                                    <rect width="20" height="14" x="2" y="6" rx="2" />
+                                </svg>
+                                <h3>Backend</h3>
+                            </div>
+                            <p id="exp-2" class="card-text">APIs development in a big team. Extending functionality and
+                                fixing bugs.</p>
+                            <div class="tool-display">
+                                <div class="tool">
+                                    <p><i class="devicon-dbeaver-plain"></i> DBeaver</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-docker-plain"></i> Docker</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-git-plain"></i> Git</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-gitlab-plain"></i> GitLab</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-intellij-plain"></i> IntelliJ</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-java-plain"></i> Java</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-jenkins-plain"></i> Jenkins</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-json-plain"></i> Json</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-junit-plain"></i> JUnit</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-postgresql-plain"></i> PostgreSQL</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-postman-plain"></i> Postman</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-powershell-plain"></i> PowerShell</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-spring-plain"></i> Spring</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-azuresqldatabase-plain"></i> SQL</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-swagger-plain"></i> Swagger</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-trello-plain"></i> Trello</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-xml-plain"></i> XML</p>
+                                </div>
+                            </div>
                         </div>
-                        <p id="exp-3" class="card-text">AWS setup and test coverage for a major bank.</p>
-                        <div class="tool-display">
-                            <div class="tool">
-                                <p><i class="devicon-amazonwebservices-plain"></i> AWS</p>
+                    </div>
+                    <div class="card">
+                        <div class="inner-card">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="-5 -5 34 34"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-briefcase-business">
+                                    <path d="M12 12h.01" />
+                                    <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                                    <path d="M22 13a18.15 18.15 0 0 1-20 0" />
+                                    <rect width="20" height="14" x="2" y="6" rx="2" />
+                                </svg>
+                                <h3>Backend & DevOps</h3>
                             </div>
-                            <div class="tool">
-                                <p><i class="devicon-git-plain"></i> Git</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-eclipse-plain"></i> Eclipse</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-java-plain"></i> Java</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-junit-plain"></i> JUnit</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-powershell-plain"></i> PowerShell</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-sonarqube-plain"></i> SonarQube</p>
-                            </div>
-                            <div class="tool">
-                                <p><i class="devicon-azuresqldatabase-plain"></i> SQL</p>
+                            <p id="exp-3" class="card-text">AWS setup and test coverage for a major bank.</p>
+                            <div class="tool-display">
+                                <div class="tool">
+                                    <p><i class="devicon-amazonwebservices-plain"></i> AWS</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-git-plain"></i> Git</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-eclipse-plain"></i> Eclipse</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-java-plain"></i> Java</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-junit-plain"></i> JUnit</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-powershell-plain"></i> PowerShell</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-sonarqube-plain"></i> SonarQube</p>
+                                </div>
+                                <div class="tool">
+                                    <p><i class="devicon-azuresqldatabase-plain"></i> SQL</p>
+                                </div>
                             </div>
                         </div>
                     </div>
